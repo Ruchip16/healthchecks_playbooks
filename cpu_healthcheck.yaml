@@ -1,6 +1,6 @@
 ---
 - name: CPU healthchecks
-  hosts: ios
+  hosts: network
   tasks:
     - name: Run cpu role
       ansible.builtin.include_role:
