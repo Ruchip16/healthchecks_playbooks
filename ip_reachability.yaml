@@ -1,6 +1,6 @@
 ---
 - name: IP Reachability healthchecks
-  hosts: rtr1
+  hosts: rtr2
   tasks:
     - name: Run ip_reachability role with explicit count
       ansible.builtin.include_role:
