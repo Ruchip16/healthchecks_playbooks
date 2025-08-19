@@ -1,6 +1,7 @@
 ---
 - name: CPU healthchecks
   hosts: rtr2
+  gather_facts: false
   tasks:
     - name: Run cpu role
       ansible.builtin.include_role:
