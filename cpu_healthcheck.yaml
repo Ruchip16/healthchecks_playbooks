@@ -1,6 +1,6 @@
 ---
 - name: CPU healthchecks
-  hosts: network
+  hosts: rtr1
   tasks:
     - name: Run cpu role
       ansible.builtin.include_role:
