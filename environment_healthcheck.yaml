@@ -1,0 +1,13 @@
+---
+- name: Run environment healthcheck
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Run environment role
+      ansible.builtin.include_role:
+        name: network.healthchecks.environment
+      vars:
+        details: true
+        critical_temp_threshold: 40
+        warning_temp_threshold: 30
+      register: env_result
