@@ -19,7 +19,3 @@
               - name: min_admin_state_up
                 min_count: 1
       register: interfaces_result
-
-    - name: Display interfaces health check results
-      ansible.builtin.debug:
-        var: interfaces_result.health_checks
