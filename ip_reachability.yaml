@@ -8,9 +8,9 @@
         name: network.healthchecks.ip_reachability
       vars:
         ip_targets:
-          - 192.0.2.1
-          - 198.51.100.1
-        count: 2
+          - 8.8.8.8
+          - 9.9.9.9
+        count: 3
       register: result
 
     - name: Display reachability results with explicit count
@@ -22,8 +22,7 @@
         name: network.healthchecks.ip_reachability
       vars:
         ip_targets:
-          - 192.0.2.1
-          - 198.51.100.1
+          - 1.1.1.1
       register: result2
 
     - name: Display reachability results with default count
