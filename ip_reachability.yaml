@@ -1,6 +1,6 @@
 ---
 - name: IP Reachability healthchecks
-  hosts: rtr2
+  hosts: all
   gather_facts: false
   tasks:
     - name: Run ip_reachability role with explicit count

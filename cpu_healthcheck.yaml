@@ -1,6 +1,6 @@
 ---
 - name: CPU healthchecks
-  hosts: rtr2
+  hosts: all
   gather_facts: false
   tasks:
     - name: Run cpu role
