@@ -8,8 +8,9 @@
         name: network.healthchecks.ip_reachability
       vars:
         ip_targets:
-          - 8.8.8.8
-          - 9.9.9.9
+          - 4.2.2.1
+          - 4.2.2.2
+          - 216.239.32.1
         count: 3
       register: result
 
